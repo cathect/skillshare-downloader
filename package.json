@@ -1,0 +1,21 @@
+{
+  "name": "skillshare-downloader",
+  "version": "1.0.0",
+  "description": "Node.JS app to download content off of Skillshare.com for offline use.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "skillshare",
+    "downloader",
+    "offline"
+  ],
+  "author": "Ole Peters",
+  "license": "",
+  "dependencies": {
+    "progress": "^2.0.3",
+    "request": "^2.88.0",
+    "winston": "^3.2.1"
+  }
+}
