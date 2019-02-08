@@ -67,7 +67,7 @@ exports.getVideoInfo = function(accID, pk, sess) {
   return new Promise(function(resolve, reject) {
     const match = sess.video_mid_thumbnail_url.match(/\/thumbnails\/(\d+)\//);
     if (!match && !sess.videoId) {
-      console.log("No Video ID for ", sess);
+      console.log("No Video ID for ", sess.title);
       resolve(null);
     }
     const videoId = match ? match[1] : sess.videoId.split(":")[1];
@@ -94,6 +94,7 @@ exports.getVideoInfo = function(accID, pk, sess) {
     })
   }).catch(err => console.log(err));;
 };
+
 
 exports.download = function(file_url, targetPath) {
   return new Promise(function(resolve, reject) {
