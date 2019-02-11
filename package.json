@@ -12,7 +12,7 @@
     "offline"
   ],
   "author": "Ole Peters",
-  "license": "",
+  "license": "MIT",
   "dependencies": {
     "progress": "^2.0.3",
     "request": "^2.88.0",
